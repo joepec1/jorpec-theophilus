@@ -1,71 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Daughters of Niger Delta</title>
-  <meta name="description" content="Empowering women through leadership, education, entrepreneurship and support for women in the Niger Delta.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header container">
-    <h1>Daughters of Niger Delta</h1>
-    <button id="navToggle" class="nav-toggle" aria-expanded="false">Menu</button>
-    <nav id="siteNav" class="nav">
-      <a href="#home">Home</a>
-      <a href="#programs">Programs</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a class="btn" href="#donate">Donate</a>
-    </nav>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Daughters of Niger Delta</a>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#programs">Programs</a>
+        <a href="#join">Join Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+    </div>
   </header>
 
-  <section id="home" class="hero container">
-    <h2>Welcome to Our Website</h2>
-    <p>Empowering women to achieve their goals in life.</p>
-    <a class="btn btn-primary" href="#programs">Get Started</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Empowering Women, Transforming Communities</h1>
+      <p class="lead">Daughters of Niger Delta – advancing equity, leadership, and sustainable development for women.</p>
+      <a class="btn" href="#join">Join the Movement</a>
+    </div>
   </section>
 
-  <section id="programs" class="programs container">
+  <!-- About -->
+  <section id="about" class="container section">
+    <h2>About Us</h2>
+    <h3>Vision</h3>
+    <p>To build a thriving, inclusive, and empowered society where the voices, rights, and contributions of Niger Delta women are respected, celebrated, and integral to sustainable development.</p>
+    <h3>Mission</h3>
+    <p>To unite, empower, and advocate for the women of the Niger Delta by promoting education, economic independence, leadership, environmental justice, and social equity through community-driven initiatives, partnerships, and policy engagement.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container section">
+    <h2>Our Projects & Initiatives</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Education Empowerment</h3>
+        <p>Providing access to education and training for girls and women in the Niger Delta.</p>
+      </article>
+      <article class="card">
+        <h3>Environmental Justice</h3>
+        <p>Advocating for clean and safe environments for our communities.</p>
+      </article>
+      <article class="card">
+        <h3>Leadership Development</h3>
+        <p>Building the next generation of women leaders through mentorship and capacity building.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="container section">
     <h2>Our Programs</h2>
-    <div class="card-list">
-      <div class="card">
-        <h3>Empowerment Workshops / Leadership Training</h3>
-        <p>Workshops that equip women with leadership and life skills.</p>
-      </div>
-      <div class="card">
-        <h3>Education Support</h3>
-        <p>Providing scholarships and educational resources.</p>
-      </div>
-      <div class="card">
-        <h3>Entrepreneurship Programs</h3>
-        <p>Supporting women to start and grow their businesses.</p>
-      </div>
-    </div>
+    <ul class="services-list">
+      <li>Women’s Economic Empowerment</li>
+      <li>Policy Engagement & Advocacy</li>
+      <li>Community Health & Wellbeing</li>
+      <li>Leadership & Mentorship</li>
+    </ul>
   </section>
 
-  <section id="about" class="stats container">
-    <h2>Making an Impact</h2>
-    <div class="stat-grid">
-      <div class="stat"><span>10,000+</span><p>Lives Impacted</p></div>
-      <div class="stat"><span>50+</span><p>Communities Reached</p></div>
-      <div class="stat"><span>200+</span><p>Volunteers</p></div>
-      <div class="stat"><span>20+</span><p>Partnerships Worldwide</p></div>
-    </div>
+  <!-- Join Us -->
+  <section id="join" class="container section">
+    <h2>Join Us</h2>
+    <p>Become a member of Daughters of Niger Delta and be part of the change.</p>
+    <form id="joinForm" action="https://formspree.io/f/mvgpyvlq" method="POST">
+      <label>
+        Full Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Phone
+        <input type="tel" name="phone" required>
+      </label>
+      <label>
+        Location
+        <input type="text" name="location" required>
+      </label>
+      <button class="btn" type="submit">Register</button>
+    </form>
   </section>
 
-  <section id="contact" class="contact container">
-    <h2>Get in Touch</h2>
-    <p>Join us in empowering women. Contact us today to explore partnership and support opportunities.</p>
-    <div class="social-links">
-      <a href="#" aria-label="Facebook">Facebook</a>
-      <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      <a href="#" aria-label="Twitter">Twitter</a>
-    </div>
+  <!-- Contact -->
+  <section id="contact" class="container section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you.</p>
+    <form id="contactForm" action="https://formspree.io/f/mvgpyvlq" method="POST">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn" type="submit">Send</button>
+    </form>
   </section>
 
-  <footer class="footer container">
-    <p>© <span id="year"></span> Daughters of Niger Delta</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Daughters of Niger Delta. All rights reserved.</p>
+      <nav class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
+    </div>
   </footer>
 
   <script src="script.js"></script>
